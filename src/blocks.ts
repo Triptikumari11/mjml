@@ -54,6 +54,25 @@ export default (editor: Editor, opts: RequiredPluginOptions) => {
         <mj-column><mj-text>Content 3</mj-text></mj-column>
       </mj-section>`,
   });
+  addBlock("mj-group", {
+    label: getI18nLabel('group'),
+   media: `<svg viewBox="0 0 23 24">
+   <path fill="currentColor" d="M2 20h8V4H2v16Zm-1 0V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1ZM13 20h8V4h-8v16Zm-1 0V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1Z"/>
+ </svg>`,
+   content: `
+       <mj-section>
+       <mj-group>
+         <mj-column width="50% !important">
+           <mj-text font-family="Barlow">Content 1</mj-text>
+         </mj-column>
+         <mj-column width="50% !important">
+          <mj-text font-family="Barlow">Content 2</mj-text>
+         </mj-column>
+       </mj-group>
+     </mj-section>`,
+ });
+ 
+
 
   addBlock('mj-text', {
     label: getI18nLabel('text'),
@@ -185,6 +204,22 @@ export default (editor: Editor, opts: RequiredPluginOptions) => {
         <img class="item" src="https://source.unsplash.com/random/200x146" alt="Example image">
       </div>
     </mj-raw>`,
+  });
+  addBlock("mj-carousel", {
+    label: 'carousel',
+   media: `<svg viewBox="0 0 23 24">
+   <path fill="currentColor" d="M2 20h8V4H2v16Zm-1 0V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1ZM13 20h8V4h-8v16Zm-1 0V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1Z"/>
+  </svg>`,
+   content: `
+   <mj-section>
+   <mj-column>
+     <mj-carousel>
+       <mj-carousel-image src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"/>
+         <mj-carousel-image src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"/>
+           <mj-carousel-image src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"/>
+     </mj-carousel>
+   </mj-column>
+  </mj-section>`,
   });
 
 };

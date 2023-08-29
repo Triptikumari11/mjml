@@ -27,6 +27,7 @@
   "author": "Artur Arseniev",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "grapesjs-mjml": "^1.0.5",
     "mjml-browser": "^4.13.0"
   },
   "devDependencies": {
